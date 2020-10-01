@@ -16,15 +16,19 @@ The solution is to create a "bridge" between the implementation and the abstract
 * Hiding implementation details from clients - Clients won't be able to access data that they should not be able to acess
 
 
-## Design Pattern 2: Decorator
+## Design Pattern 2: Decorator AKA Wrapper
 
 ### Problem:
 Used when you want to add responsibilities to specific objects and not the whole class.
 
 ### Solution:
-
+Create an object that encapsulates the specific component that you want to add things to.
 
 ### Consequences: 
+* More flexible than normal inheritance
+* Avoids very complex classes high in the hierarchy
+* A decorator and its component aren't identical
+* Lots of little objects
 
 
 ## Design Pattern 3: 
