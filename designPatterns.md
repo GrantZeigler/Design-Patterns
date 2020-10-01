@@ -31,12 +31,15 @@ Create an object that encapsulates the specific component that you want to add t
 * Lots of little objects
 
 
-## Design Pattern 3: 
+## Design Pattern 3: Chain of Responsibility
 
 ### Problem: 
-
+This is used when you want to decouple a request and a reciever by giving several objects a chance to fufill the request.
 
 ### Solution:
-
+Create a chain of objects that attempt to handle the requests in order, until one of them actually handles it.
 
 ### Consequences: 
+* Decouples object and the handler since it does not know which class is the one handling the function. It only knows that the function i shandled
+* Adds flexibility in assigning responsiblities
+* Receipt isn't guaranteed - the request may go through the entire chain and not be handled
